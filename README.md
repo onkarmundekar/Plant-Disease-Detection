@@ -30,4 +30,23 @@ Tensorflow
 
 Kaggle
 
+GUI
+
+Home Page
+
+Responsive Home Page with Toggle Navbar  
+
+![image](https://user-images.githubusercontent.com/32698062/144262379-8d6db330-c3e9-40be-98a3-c3471794b9e1.png)
+
+EDA
+
+Exploratory data analysis for used Dataset
+
+![image](https://user-images.githubusercontent.com/32698062/144262498-6e0bfea2-4345-46e8-84d8-152f303932c0.png)
+
+Detected Disease
+
+On this Page user will find out is selected leaf is diseased or Healthy with Disease Information,Prevenetive Measure as well as supplements to use to keep plant healthy.
+
+![image](https://user-images.githubusercontent.com/32698062/144262658-ec9a6038-0930-462f-84f4-3620ce68a0ca.png)
 
