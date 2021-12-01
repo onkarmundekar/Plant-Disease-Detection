@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block pagetitle %}
+Plant Disease Detection
+{% endblock pagetitle %}
+{% block body %}
+<style>
+  body{
+    overflow-x: hidden;
+  }
+  @media only screen and (max-width: 830px) {
+    .laptop{
+      display: none;
+    }
+  }
+  @media (min-width:830px) and (max-width: 1536px){
+    .mobile{
+      display: none;
+    }
+  }
+</style>
+<!--
+<div class='mobile p-5'>
+  <div class="row mb-5 text-center text-white">
+    <div class="col-lg-10 mx-auto">
+      <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color:red;"><b>Note✍🏻</b></h1>
+      <p class="lead" style="font-weight: 500;color: black;">Please🙏 Open This Site On Laptop/PC 💻 Screen Only</p>
+      <p class="lead" style="font-weight: 500;color: black;">Thank You 🤝</p>    
+    </div>
+</div>
+</div>-->
+
+
+<div class="row mb-5 text-center text-white laptop">
+    <div class="col-lg-10 mx-auto">
+        <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color: rgb(4, 54, 4);"><b>Plant Disease
+                Detection </b></h1>
+        <p class="lead" style="font-weight: 500;color: black;">AI Engine to help <b>Detection of Plant Disease</b></p>
+    </div>
+</div>
+
+<center class="laptop">
+    <a href="/index">
+    <button class = "bttn-pill bttn-lg btn-success border-dark"><b style="color: black; border-radius: 30px;border:1px solid green;padding: 8px 35px 8px 35px;">AI Engine</b></button>
+</a>
+</center>
+
+
+<center class="laptop">
+<div class="row p-2">
+    <div class=" col">
+        <!--<div class="p-3 bg-white shadow rounded-lg" style="width: 100%;height: 10%;">-->
+          <img src="/static/abc.jpg" width="50%" height="70%">
+        
+          
+        <!--</div>-->
+    </div>
+    
+    
+</div>
+</center>
+
+
+{% endblock body %}

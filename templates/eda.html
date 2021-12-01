@@ -1,0 +1,244 @@
+{% extends 'base.html' %}
+{% block pagetitle %}
+EDA
+{% endblock pagetitle %}
+{% block body %}
+
+<div class="nav" style="position: fixed;" >   
+    <ul class="navbar-nav"  >
+       <li class="navbar-brand active">
+           <a class="nav-link" href="#selectedimage" style="color: black; margin-left: 1px;position: fixed;padding: 10px;">-Image Selection</a>
+       </li>
+       <li class="navbar-brand">
+           <a class="nav-link" href="#distributionofchannels" style="color: black;margin-left: 1px;position: fixed;padding: 10px;margin-top: 20px;">-Distribution Of Channels</a>
+       </li>
+       <li class="navbar-brand active">
+           <a class="nav-link" href="#healthyleaves" style="color: Black;margin-left: 1px;position: fixed;padding: 10px;margin-top: 40px;">-Disease Detection</a>    
+       </li>
+       <li class="navbar-brand">
+           <a class="nav-link" href="#piechart" style="color: black;margin-left: 1px;position: fixed;padding: 10px;margin-top: 60px;">-Pie Chart</a>
+       </li>
+       <li class="navbar-brand">
+           <a class="nav-link" href="#imagetrainingtechniques" style="color: black;margin-left: 1px;position: fixed;padding: 10px;margin-top: 80px;">-Image Training Techniques</a>
+       </li>
+       
+
+   </ul>
+</div>
+<div class="row mb-5 text-center text-white laptop">
+    <div class="col-lg-10 mx-auto">
+        <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color: rgb(4, 54, 4);"><b>Exploratory Data Analysis</b></h1>
+        <p class="lead" style="font-weight: 500;color: black;">EDA of Dataset which used for building AI Engine</p>
+
+    </div>
+
+    <center class="laptop" id="selectedimage">
+        <div class="row p-2">
+            <p class="lead" style="font-weight: 500;color: black;">Image Selection</p>
+            <div class=" col">
+                
+                <!--<div class="p-3 bg-white shadow rounded-lg" style="width: 100%;height: 10%;">-->
+                  <img src="/static/selectedimage" width="70%" height="100%">
+                
+                  
+                <!--</div>-->
+            </div>
+            
+            
+        </div>
+        </center>
+
+        
+        
+        <center class="laptop" id="distributionofchannels" >
+                <div class="row p-2">
+                    <p class="lead" style="font-weight: 500;color: black;">Distribution of Red Channels</p>
+                    <div class=" col">
+                        <!--<div class="p-3 bg-white shadow rounded-lg" style="width: 100%;height: 10%;">-->
+                          <img src="/static/reddistri" width="70%" height="100%">
+                        
+                          
+                        <!--</div>-->
+                    </div>
+                    
+                    
+                </div>
+                </center>
+            
+        <center class="laptop" id="a" >
+            <div class="row p-2">
+                <p class="lead" style="font-weight: 500;color: black;">Distribution of Green Channels</p>
+                <div class=" col">
+                    <!--<div class="p-3 bg-white shadow rounded-lg" style="width: 100%;height: 10%;">-->
+                      <img src="/static/greendistri" width="70%" height="100%">
+                    
+                      
+                    <!--</div>-->
+                </div>
+                
+                
+            </div>
+            </center>    
+
+        
+       <center class="laptop" id="a" >
+                <div class="row p-2">
+                    <p class="lead" style="font-weight: 500;color: black;">Distribution of Blue Channels</p>
+                    <div class=" col">
+                        <!--<div class="p-3 bg-white shadow rounded-lg" style="width: 100%;height: 10%;">-->
+                          <img src="/static/bluedistribution" width="70%" height="100%">
+                        
+                          
+                        <!--</div>-->
+                    </div>
+                    
+                    
+                </div>
+                </center>
+        
+        
+                <center class="laptop" id="a" >
+                    <div class="row p-2">
+                        <p class="lead" style="font-weight: 500;color: black;">Distribution of RGB Channels</p>
+                        <div class=" col">
+                            <!--<div class="p-3 bg-white shadow rounded-lg" style="width: 100%;height: 10%;">-->
+                              <img src="/static/RGBDistribution" width="70%" height="100%">
+                            
+                              
+                            <!--</div>-->
+                        </div>
+                        
+                        
+                    </div>
+                    </center>
+                
+        <center class="laptop" id="healthyleaves" >
+            <div class="row p-2">
+                <p class="lead" style="font-weight: 500;color: black;">Healthy Leaves</p>
+                <div class=" col">
+                    <!--<div class="p-3 bg-white shadow rounded-lg" style="width: 100%;height: 10%;">-->
+                      <img src="/static/healthyleaves.png" width="70%" height="100%">
+                    
+                      
+                    <!--</div>-->
+                </div>
+                
+                
+            </div>
+            </center> 
+        
+        <center class="laptop" id="a" >
+                <div class="row p-2">
+                    <p class="lead" style="font-weight: 500;color: black;">Scab Leaves</p>
+                    <div class=" col">
+                        <!--<div class="p-3 bg-white shadow rounded-lg" style="width: 100%;height: 10%;">-->
+                          <img src="/static/scableaves.png" width="70%" height="100%">
+                        
+                          
+                        <!--</div>-->
+                    </div>
+                    
+                    
+                </div>
+                </center>      
+                
+        
+         <center class="laptop" id="a" >
+                    <div class="row p-2">
+                        <p class="lead" style="font-weight: 500;color: black;">Rust Leaves</p>
+                        <div class=" col">
+                            <!--<div class="p-3 bg-white shadow rounded-lg" style="width: 100%;height: 10%;">-->
+                              <img src="/static/rustleaves.png" width="70%" height="100%">
+                            
+                              
+                            <!--</div>-->
+                        </div>
+                        
+                        
+                    </div>
+                    </center>  
+                    
+    
+        
+                    <center class="laptop" id="a" >
+                        <div class="row p-2">
+                            <p class="lead" style="font-weight: 500;color: black;">Leaves with Multiple Diseases</p>
+                            <div class=" col">
+                                <!--<div class="p-3 bg-white shadow rounded-lg" style="width: 100%;height: 10%;">-->
+                                  <img src="/static/multiplediseaseleaves.png" width="70%" height="100%">
+                                
+                                  
+                                <!--</div>-->
+                            </div>
+                            
+                            
+                        </div>
+                        </center>
+
+        
+        <center class="laptop" id="piechart" >
+                            <div class="row p-2">
+                                <p class="lead" style="font-weight: 500;color: black;">Pie Chart</p>
+                                <div class=" col">
+                                    <!--<div class="p-3 bg-white shadow rounded-lg" style="width: 100%;height: 10%;">-->
+                                      <img src="/static/diseasedpie" width="70%" height="100%">
+                                    
+                                      
+                                    <!--</div>-->
+                                </div>
+                                
+                                
+                            </div>
+                            </center>
+        
+        <center class="laptop" id="imagetrainingtechniques" >
+                                <div class="row p-2">
+                                    <p class="lead" style="font-weight: 500;color: black;">Image Training Techniques</p>
+                                    <p class="lead" style="font-weight: 500;color: black;">Image Flipping</p>
+
+                                    <div class=" col">
+                                        <!--<div class="p-3 bg-white shadow rounded-lg" style="width: 100%;height: 10%;">-->
+                                          <img src="/static/imageflip.png" width="70%" height="100%">
+                                        
+                                          
+                                        <!--</div>-->
+                                    </div>
+                                    
+                                    
+                                </div>
+                                </center> 
+        <center class="laptop" id="a" >
+                                    <div class="row p-2">
+                        
+                                        <p class="lead" style="font-weight: 500;color: black;">Blurred Image</p>
+    
+                                        <div class=" col">
+                                            <!--<div class="p-3 bg-white shadow rounded-lg" style="width: 100%;height: 10%;">-->
+                                              <img src="/static/blurredimage.png" width="70%" height="100%">
+                                            
+                                              
+                                            <!--</div>-->
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    </center>                                 
+      
+                                    <center class="laptop" id="a" >
+                                        <div class="row p-2">
+                                           
+                                            <p class="lead" style="font-weight: 500;color: black;">Convoled Image</p>
+        
+                                            <div class=" col">
+                                                <!--<div class="p-3 bg-white shadow rounded-lg" style="width: 100%;height: 10%;">-->
+                                                  <img src="/static/convoledimage.png" width="70%" height="100%">
+                                                
+                                                  
+                                                <!--</div>-->
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                        </center> 
+                                
+{% endblock body %}
